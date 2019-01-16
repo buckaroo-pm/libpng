@@ -28,6 +28,7 @@ cxx_library(
   visibility = [
     'PUBLIC',
   ],
+  reexport_all_header_dependencies = False,
   deps = buckaroo_deps(),
 )
 
