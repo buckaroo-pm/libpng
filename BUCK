@@ -1,4 +1,4 @@
-include_defs('//BUCKAROO_DEPS')
+load('//:buckaroo_macros.bzl', 'buckaroo_deps')
 
 cxx_library(
   name = 'png',
@@ -28,7 +28,7 @@ cxx_library(
   visibility = [
     'PUBLIC',
   ],
-  deps = BUCKAROO_DEPS,
+  deps = buckaroo_deps(),
 )
 
 cxx_binary(
